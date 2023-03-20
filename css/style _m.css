@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+/* reset for mobile */
+.pc {display: none !important;}
+br.only-pc {content: '';}
+br.only-pc::after {content: ' ';}
+
+
+/* 전역 변수 설정 */
+:root {
+
+}
+
+/* common */
+body {font-family: 'NotoSansKR', sans-serif; font-size: 14px; font-weight: 300; color: #333333; line-height: 1.4; background-color: #ffffff;}
+#wrapper {min-width: 320px; max-width: 1024px; margin: 0 auto; overflow: hidden;}
+#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; text-align: center; line-height: 40px; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.8); transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+

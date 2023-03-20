@@ -1,0 +1,218 @@
+@charset 'utf-8';
+
+/* reset for pc */
+.mobile {display: none !important;}
+br.only-m {content: '';}
+br.only-m::after {content: ' ';}
+
+
+/* 전역 변수 설정 */
+:root {
+
+}
+
+
+
+/* common */
+body {font-family: 'NotoSansKR', sans-serif; font-size: 16px; font-weight: 300; color: #333333; line-height: 1.4; letter-spacing: -0.02em; background-color: #ffffff;}
+#wrapper {min-width: 1000px; overflow: hidden;}
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+
+
+/* 로그인페이지 */
+body.login {background: url(../img/bg02.jpeg) center center no-repeat; background-size: cover; height: 100vh;}
+body.login #main {height: 100%;}
+#login_box {position: absolute; left: 50%; top: 50%; width: 600px; height: 300px; transform: translate(-50%, -50%); border-radius: 10px; background-color: rgba(238, 238, 238, 0.8); box-shadow: 5px 5px 15px 0 rgb(0 0 0 / 20%);}
+#login_box > div.deco {position: absolute; top: 0; width: 100%; height: 23px; background-color: yellow; background-color: rgba(59, 59, 59, 0.7); border-radius: 10px 10px 0 0;}
+#login_box div.deco > ul {height: 100%; padding: 6px 0 0 10px;}
+#login_box div.deco > ul > li {float: left; width: 11px; height: 11px; border-radius: 20px; background-color: rgba(238, 238, 238, 0.7); margin-right: 4px; text-indent: -9999px;}
+#login_box div.input_box {width: 100%; height: 60%; margin-top: 23px; }
+#login_box div.input_box > h3 {padding: 30px 0 10px 0; font-weight: bold; text-align: center; margin: 0; font-size: 18px;}
+#login_box div.input_box > label {display: block; text-align: center;}
+#login_box div.input_box > label > input {font-family: 'NotoSansKR'; width: 270px; height: 30px; margin-top: 15px; margin-left: 15px; padding: 3px 0 0 16px; border-radius: 100px; border: none; background-color: #575757;}
+#login_box div.input_box > label > input::placeholder { font-size: 16px; color: #cccccc;}
+#login_box div.input_box > label > i {vertical-align: text-top; font-size: 24px;}
+#login_box div.button_box {padding: 10px 145px; width: 100%; height: 40%;}
+#login_box div.button_box > button {display: block; border: none; border-radius: 5px; width: 310px; height: 30px; margin-bottom: 10px; color: #333333; font-size: 16px; font-weight: 500; font-family: inherit; background-color: #909090;}
+#login_box div.button_box > a {display: inline-block; width: calc(50% - 5px); height: 30px; background-color: #909090; border-radius: 5px; line-height: 30px; text-align: center; color: #333333; font-size: 16px;}
+#login_box div.button_box > a + a {margin-left: 6px;}
+
+
+
+#header {position: fixed; left: 0; top: 0; width: 100%; height: 70px; padding: 0 30px; box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2); background: #ffffff; z-index: 1000000;}
+#header div.logo {float: left;}
+#header div.logo > a.bar {font-size: 22px; line-height: 70px;}
+#header div.logo > a.bar > i {}
+#header div.logo > h1 {display: inline-block; margin-left: 30px;}
+#header div.logo > h1 > a {display: block;}
+#header div.logo > h1 > a > img {margin-right: 10px;}
+#header ul {position: absolute; right: 0; top: 50%; transform: translate(-50%, -50%);}
+#header ul > li {float: left;}
+#header ul > li a {display: block;}
+#header ul > li + li {margin-left: 15px;}
+#header ul > li:last-child > a {width: 14px; height: 23px;}
+#header ul > li:last-child > a > i {position: absolute; line-height: 28px;}
+#header ul > li.light i.fa-solid {display: none;}
+#header ul > li.light i.fa-regular {display: block;}
+#header ul > li.dark i.fa-solid {display: block;}
+#header ul > li.dark i.fa-regular {display: none;}
+
+#gnb {position: fixed; left: 0; top: 70px; width: 255px; height: calc(100% - 70px); box-sizing: border-box; overflow-y: auto; background-color: #ffffff; border-right: 1px solid rgba(0, 0, 0, 0.1); transition: all 0.5s; z-index: 10000;}
+#gnb div.profile {padding-top: 20px; height: 250px;}
+#gnb div.profile > p.circle {position: absolute; left: 50%; transform: translate(-50%, 0); width: 150px; height: 150px;}
+
+#gnb div.profile > h2 {position: absolute; top: 180px; width: 100%; text-align: center;}
+#gnb div.profile > h2 > p {font-size: 18px; font-weight: 500;}
+
+nav {color: #505050; }
+nav > ul.aside_top {}
+nav > ul.aside_top > li {position: relative; height: 37px; overflow: hidden;}
+nav > ul.aside_top > li.on {color: #5bc764; font-weight: 500; background-color: #f7f7f7;}
+nav > ul.aside_top > li.on::before {content: ''; position: absolute; width: 5px; height: 100%; left: 0; background-color: #5bc764;}
+nav > ul.aside_top > li > a {display: block; padding: 0 0 5px 25px; line-height: 32px;}
+nav > ul.aside_top > li > a > i {font-size: 20px; padding-right: 15px;}
+nav > ul.aside_bottom {position: absolute; bottom: 20px; left: 25px;}
+nav > ul.aside_bottom > li {line-height: 26px; height: 26px; overflow: hidden;}
+nav > ul.aside_bottom > li > a {display: block;}
+nav > ul.aside_bottom > li > a > i {padding-right: 10px;}
+
+#gnb.on {width: 70px; overflow: hidden;}
+#gnb.on div.profile {padding-top: 20px; height: 100px;}
+#gnb.on div.profile > p.circle {position: absolute; left: 50%; transform: translate(-50%, 0); width: 50px; height: 50px; border-radius: 200px; overflow: hidden;}
+#gnb.on div.profile > h2 {display: none;}
+#gnb.on div.profile > h2 > p {}
+
+#footer {height: 30px; background: #f9f9f9; font-size: 12px; line-height: 30px; text-align: center;}
+
+
+/* layout */
+section.content_container {padding: 100px 30px 30px 285px; transition: padding 0.5s; background-color: #f5f5f5; overflow: hidden;}
+section.content_container.on {padding: 100px 30px 30px 100px;}
+section.content_container > h3 {font-size: 24px; font-weight: 400;}
+section.content_container > h3 + p {font-size: 12px; margin-bottom: 30px;}
+section.container_grid {width: 100%; margin-bottom: 30px; display: grid; gap: 10px; grid-template-columns: 1fr;}
+section.container_grid > div {position: relative; padding: 10px 20px; min-height: 100px; border: 1px solid #ebebeb; background-color: #ffffff; border-radius: 3px;}
+section.container_grid > .title {grid-column: 1 / -1;}
+section.container_grid > .span_2 {grid-column: span 2;}
+section.container_grid > .span_3 {grid-column: span 3;}
+section.container_grid > div > h5 {margin-bottom: 3px;}
+section.container_grid > div > p {font-size: 14px;}
+
+section.container_grid.col_2 {grid-template-columns: repeat(2, 1fr);}
+section.container_grid.col_3 {grid-template-columns: repeat(3, 1fr);}
+section.container_grid.col_4 {grid-template-columns: repeat(4, 1fr);}
+section.container_grid.col_4.type_1 > .big {grid-area: 2 / 2 / 4 / 4;}
+section.container_grid.col_4.type_2 {}
+
+
+
+/* dashboard */
+#main.dashboard .content_container > div {float: left; width: calc(33.33% - 30px);}
+#main.dashboard .content_container > div + div {margin-left: 30px;}
+h5 {font-size: 16px; font-weight: 400;}
+
+
+section.inner {position: relative; padding: 15px 20px; margin-bottom: 30px; border: 1px solid #e4e4e4; background-color: #ffffff; font-size: 14px; font-weight: 400;}
+section.inner > h4 {font-size: 18px; font-weight: 400; margin-bottom: 15px;}
+section.inner .thumbnail {position: relative; height: 230px;}
+section.inner .thumbnail > span {position: relative; display: block; height: 200px; overflow: hidden;}
+section.inner .thumbnail > span > img {position: relative; left: 0; top: 0; width: 100%; min-height: 100%; object-fit: cover;}
+section.inner .thumbnail > h5 {position: absolute; bottom: 40px; left: 10px; font-weight: 400; color: #ffffff;}
+section.inner .thumbnail > p {margin-top: 10px;}
+section.inner > ul {margin: 25px 0 30px;}
+section.inner > ul > li {line-height: 14px;}
+section.inner > ul > li + li {margin-top: 15px;}
+section.inner > ul dl {overflow: hidden;}
+section.inner > ul dl dt {float: left;}
+section.inner > ul dl dd {float: right;}
+section.inner > ul dl dd > em {margin-left: 10px;}
+section.inner > ul dl dd > em > i {vertical-align: baseline;}
+
+ul.post {}
+ul.post > li {height: 5vh; display: flex;}
+ul.post > li > img {width: 20%; margin-right: 20px;}
+ul.post > li > p {}
+ul.post > li > div {position: relative; width: calc(80% - 20px); height: 100%;}
+ul.post > li > div > h4 {padding-top: 3px;}
+ul.post > li > div > ul {position: absolute; width: 100%; bottom: 0; background-color: #ffffff;}
+ul.post > li > div > ul > li {float: left;}
+ul.post > li > div > ul > li > i {margin-right: 5px;}
+ul.post > li > div > ul > li + li {margin-left: 20px;}
+ul.post > li > div > ul.hover {display: none; height: 100%; padding-top: 11px;}
+ul.post > li > div > ul.hover > li {}
+ul.post > li > div > ul.hover > li > a {display: block; color: #909090;}
+ul.post > li > div > ul.hover > li > a:hover {color: #333333;}
+ul.post > li > div > ul.hover > li > a > i {font-size: 24px;}
+ul.post > li.on {}
+ul.post > li.on > div > ul.hover {display: block;}
+
+
+div.top-inner {}
+div.top-inner > div.title {}
+div.top-inner > div.title > p {position: relative; display: inline-block; margin-left: 20px;}
+div.top-inner > div.title > p + p::before {content: '·'; position: absolute; left: -1em;}
+div.top-inner > div.content {margin: 40px 0 30px;}
+div.top-inner > div.content > p {padding-bottom: 25px; border-bottom: 1px solid #e4e4e4;}
+
+div.bottom-inner {}
+div.bottom-inner > div {float: left; width: 50%;}
+div.bottom-inner > div > span {font-size: 22px; margin: 10px 0 20px; display: inline-block;}
+div.bottom-inner > p {margin-bottom: 10px;}
+
+div.achieve {position: relative;}
+div.achieve > img {width: 30%;}
+div.achieve > div {width: 70%; position: absolute; top: 50%; right: 0; transform: translate(0, -50%); padding-left: 15px;}
+div.achieve > div > p:first-child {font-size: 18px; font-weight: 600; margin: 5px 0;}
+div.achieve > div > p {}
+
+.analy {}
+.analy > div {}
+.analy .inner_top {}
+.analy .inner_top > p {font-size: 16px;}
+.analy .inner_top > span {font-size: 12px;}
+.analy .inner_top > span.big_number {display: block; font-size: 32px;}
+.analy .inner_middle {padding: 20px 0; margin: 20px 0; border-bottom: 1px solid #e4e4e4; border-top: 1px solid #e4e4e4;}
+
+.analy > div > h5 + span {font-size: 12px;}
+.analy .inner_middle > dl {margin-top: 20px; overflow: hidden;}
+.analy .inner_middle > dl dt {clear: left; float: left; margin-bottom: 6px;}
+.analy .inner_middle > dl dd {float: right;}
+.analy .inner_bottom {}
+.analy .inner_bottom > ul {margin: 20px 0;}
+.analy .inner_bottom > ul > li {margin-bottom: 8px;}
+.analy .inner_bottom > ul > li a {position: relative; display: block;}
+.analy .inner_bottom > ul > li p {display: inline-block;}
+.analy .inner_bottom > ul > li em {position: absolute; right: 0;}
+
+ul.subsc {}
+ul.subsc > li {position: relative; height: 5vh;}
+ul.subsc > li > p {position: absolute; left: 0; top: 50%; transform: translate(0, -50%);}
+ul.subsc > li > span {display: block; padding: 6px 0 0 60px;}
+ul.subsc .circle.small2 {width: 40px; height: 40px;}
+
+.news {}
+.news > p.square {width: 100%; height: auto; overflow: hidden;}
+.news > p.square > img {object-fit: cover;}
+.news > h5 {margin: 15px 0;}
+.news > h5 + P {margin-bottom: 15px;}
+.idea {overflow: hidden;}
+.idea > .inner_left {float: left; margin-bottom: 30px; width: calc(100% - 160px);}
+.idea h5 {margin: 15px 0;}
+.idea p.img.circle {float: right;}
+.idea a.link {clear: both;}
+
+.circle {width: 150px; height: 150px; border-radius: 100%; overflow: hidden;}
+.circle.small {display: inline-block; width: 30px; height: 30px; border-radius: 100%; overflow: hidden;}
+.link {color: #065fd4; display: block; margin-bottom: 10px;}
+.up {color: #2C8E53;}
+
+
+
+
+
+
+/* 자주쓰는 구문 */
+
+
+/* font-family: "Font Awesome 5 Free"; font-weight: 600;  */

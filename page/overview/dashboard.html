@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard | Forest 관리시스템</title>
+    <meta name="description" content="Forest 관리시스템" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1400" />
+    <meta name="apple-mobile-web-app-title" content="SOOBIN KIM" /> 
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../fa/css/all.min.css" />
+    <link rel="stylesheet" href="../../css/web-font.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" media="all and (min-width: 1024.0px)" />
+    <link rel="stylesheet" href="../../css/style_m.css" media="all and (max-width: 1023.9px)" />
+    <script src="../../js/jquery-3.6.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+  </head>
+  <body class="sub">
+    <div id="wrapper">
+      <a href="#" id="skip-nav">본문 바로가기</a>
+      <header id="header">
+        <div class="logo">
+          <a href="#" class="bar"><i class="fa-solid fa-bars"></i></a>
+          <h1><a href="#"><img alt="SOOBINKIM" src="../../img/logo.png" />Forest</a></h1>
+        </div>
+        <ul>
+          <li><a href="#" title="도움말"><i class="fa-regular fa-circle-question"><span>도움말</span></i></a></li>
+          <li><a href="#" title="알림"><i class="fa-regular fa-bell"><span>알림</span></i></a></li>
+          <li class="light dark">
+            <a href="#" title="테마">
+              <i class="fa-solid fa-moon"><span>어두운 테마</span></i>
+              <i class="fa-regular fa-moon"><span>밝은 테마</span></i>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <main id="main" class="dashboard">
+        <aside id="gnb">
+          <h2 class="ir-hidden">네비게이션</h2>
+          <div class="profile">
+            <p class="circle"><img alt="picture" src="../../img/profile.jpg" /></>
+            <h2>
+              <p>내 프로필</p>
+              <p>KIMSOOBIN</p>
+            </h2>
+          </div>
+          <nav>
+            <ul class="aside_top">
+              <li class="on"><a href="./dashboard.html"><i class="fa-solid fa-border-all"></i>Dashboard</a></li>
+              <li><a href="../../page/sample/analytics.html"><i class="fa-solid fa-chart-simple"></i>Analytics</a></li>
+              <li><a href="../../page/sample/form.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Form</a></li>
+              <li><a href="../../page/sample/layout.html"><i class="fa-solid fa-table"></i>Layout</a></li>
+              <li><a href="../../page/sample/button.html"><i class="fa-solid fa-toggle-on"></i>Button</a></li>
+              <li><a href="#"><i class="fa-solid fa-list"></i>List Page</a></li>
+              <li><a href="#"><i class="fa-solid fa-mountain-sun"></i>View Page</a></li>
+              <li><a href="../../page/sample/editpage.html"><i class="fa-solid fa-pen-to-square"></i>Edit Page</a></li>
+            </ul>
+            <ul class="aside_bottom">
+              <li><a href="#"><i class="fa-solid fa-gear"></i>Setting</a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope"></i>Opinion</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <section class="content_container">
+          <h3>대시보드</h3>
+          <div>
+            <section class="inner">
+              <h4>최근 동영상 실적</h4>
+              <div class="thumbnail">
+                <span><img alt="썸네일" src="../../img//bg01.jpeg" /></span>
+                <h5>영상 제목이 들어가는 자리입니다</h5>
+                <p>일반적인 실적 대비 처음 16일 10시간</p>
+              </div>
+              <ul>
+                <li>
+                  <dl>
+                    <dt>조회수 순위</dt>
+                    <dd>1/10 <em><i class="fas fa-light fa-angle-right"></i></em></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>조회수</dt>
+                    <dd>1.5만 <em class="up"><i class="fas fa-light fa-circle-arrow-up"></i></em></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>노출 클릭률</dt>
+                    <dd>5.2% <em class="up"><i class="fas fa-light fa-circle-check"></i></em></dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>평균 시청 지속 시간</dt>
+                    <dd>10:01 <em class="up"><i class="fas fa-light fa-circle-arrow-up"></i></em></dd>
+                  </dl>
+                </li>
+              </ul>
+              <p>
+                <a href="#" class="link">동영상 분석으로 이동</a>
+                <a href="#" class="link">댓글 보기(<em>70</em>)</a>
+              </p>
+            </section>
+            <section class="inner">
+              <h4>게시된 동영상</h4>
+              <ul class="post">
+                <li class="on">
+                  <img alt="썸네일" src="../../img/bg01.jpeg" />
+                  <div>
+                    <h4>영상 제목이 들어가는 자리입니다.</h4>
+                    <ul>
+                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
+                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
+                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                    </ul>
+                    <ul class="hover">
+                      <li><a href="#"><i class="fas fa-light fa-pencil"><span>수정</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"><span>분석</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"><span>댓글</span></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-youtube"><span>영상</span></i></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <img alt="썸네일" src="../../img/bg01.jpeg" />
+                  <div>
+                    <h4>영상 제목이 들어가는 자리입니다.</h4>
+                    <ul>
+                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
+                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
+                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                    </ul>
+                    <ul class="hover">
+                      <li><i class="fas fa-light fa-pencil"></i></li>
+                      <li><i class="fas fa-light fa-chart-column"></i></li>
+                      <li><i class="fas fa-light fa-comment-dots"></i></li>
+                      <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <img alt="썸네일" src="../../img/bg01.jpeg" />
+                  <div>
+                    <h4>영상 제목이 들어가는 자리입니다.</h4>
+                    <ul>
+                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
+                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
+                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                    </ul>
+                    <ul class="hover">
+                      <li><i class="fas fa-light fa-pencil"></i></li>
+                      <li><i class="fas fa-light fa-chart-column"></i></li>
+                      <li><i class="fas fa-light fa-comment-dots"></i></li>
+                      <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <img alt="썸네일" src="../../img/bg01.jpeg" />
+                  <div>
+                    <h4>영상 제목이 들어가는 자리입니다.</h4>
+                    <ul>
+                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
+                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
+                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                    </ul>
+                    <ul class="hover">
+                      <li><i class="fas fa-light fa-pencil"></i></li>
+                      <li><i class="fas fa-light fa-chart-column"></i></li>
+                      <li><i class="fas fa-light fa-comment-dots"></i></li>
+                      <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="link">동영상으로 이동</a>
+            </section>
+            <section class="inner">
+              <h4>최신 게시물</h4>
+              <div class="top-inner">
+                <div class="title">
+                  <img alt="" src="../../img/profile.jpg" class="circle small" />
+                  <p class="name">FOREST KIM</p>
+                  <p>2022. 04. 11</p>
+                </div>
+                <div class="content">
+                 <p>게시글의 내용이 들어가는 자리입니다. 내용내용내용 게시글의 내용이 들어가는 자리입니다. 내용내용내용 게시글의 내용이 들어가는 자리입니다. 내용내용내용 게시글의 내용이 들어가는 자리입니다. 내용내용내용</p>
+                </div>
+              </div>
+              <div class="bottom-inner">
+                <div class="left-inner">
+                  <p>좋아요</p>
+                  <span>12</span>
+                </div>
+                <div class="right-inner">
+                  <p>댓글</p>
+                  <span>2</span>
+                </div>
+                <p>게시물에 하트와 답글을 남겨 관심을 표현하세요.</p>
+                <a href="#" class="link">커뮤니티 탭으로 이동</a>
+              </div>
+            </section>
+          </div>
+          <div>
+            <section class="inner">
+              <h4>새 업적</h4>
+              <div class="achieve">
+                <img alt="눈" src="../../img/eyes.png" />
+                <div>
+                  <p>조회수 <em>75,000</em>회</p>
+                  <p class="text"><em>12</em>일 전 내 동영상에 대한 관심이 높아지고 있는 것으로 보입니다.</p>
+                </div>
+              </div>
+              <a href="#" class="link">분석보기</a>
+            </section>
+            <section class="inner analy">
+              <h4>채널 분석</h4>
+              <div class="inner_top">
+                <p>현재 구독자 수</p>
+                <span class="text big_number"><em>936</em></span>
+                <span class="text">지난 28일 동안 <em class="up">222 증가</em></span>
+              </div>
+              <div class="inner_middle">
+                <h5>요약</h5>
+                <span class="text">지난 <em>28</em>일</span>
+                <dl>
+                  <dt>조회수</dt>
+                  <dd class="text"><em>1.9만</em></dd>
+                  <dt>시청 시간(단위:시간)</dt>
+                  <dd class="text"><em>2.8천</em></dd>
+                  <dt>예상 수익</dt>
+                  <dd class="text">$<em>1.94</em></dd>
+                </dl>
+              </div>
+              <div class="inner_bottom">
+                <h5>인기 동영상</h4>
+                <span class="name text">지난 <em>48시간</em><span>조회수</span></span>
+                <ul>
+                  <li><a href="#"><p>영상의 제목이 들어가는 자리 입니다.</p><em>253</em></a></li>
+                  <li><a href="#"><p>영상의 제목이 들어가는 자리 입니다.</p><em>53</em></a></li>
+                  <li><a href="#"><p>영상의 제목이 들어가는 자리 입니다.</p><em>34</em></a></li>
+                </ul>
+              </div>
+              <a href="#" class="link">채널 분석으로 이동</a>
+            </section>
+            <section class="inner">
+              <h5>최근 구독자 수</h5>
+              <span>지난 90일</span>
+              <ul class="subsc">
+                <li>
+                  <p class="circle small2"><img alt="프로필" src="../../img/puppy.jpg" /></p>
+                  <span>닉네임</span>
+                  <span>구독자 40명</span>
+                </li>
+                <li>
+                  <p class="circle small2"><img alt="프로필" src="../../img/puppy.jpg" /></p>
+                  <span>닉네임</span>
+                  <span>구독자 40명</span>
+                </li>
+                <li>
+                  <p class="circle small2"><img alt="프로필" src="../../img/puppy.jpg" /></p>
+                  <span>닉네임</span>
+                  <span>구독자 40명</span>
+                </li>
+              </ul>
+              <a href="#" class="link">모두 보기</a>
+            </section>
+          </div>
+          <div>
+            <section class="inner news">
+              <h4>뉴스</h4>
+              <p class="square"><img alt="썸네일" src="../../img/seoul.jpeg" /></p>
+              <h5>Shorts로 성공하는 크리에이터 꿀팁</h5>
+              <p>레오제이와 사내뷰공업이 알려주는 Shorts를 시작해야 하는 이유부터 구독자 증대와 수익 창출에 대한 팁 대방출! 놓치지말고 모두 확인해 보세요</p>
+              <a href="#" class="link">지금 #크리에이터에게들어봐요</a>
+            </section>
+            <section class="inner idea">
+              <h4>나만을 위한 아이디어</h4>
+              <div class="inner_left">
+                <h5>제작 기술을 향상시키기</h5>
+                <span>다양한 조명 기술을 활용하는 방법, 고품질 사운드를 녹음하는 방법, 큰 돈을 쓰지 않고도 나만의 촬영장을 만들 수 있는 방법을 알아보세요.</span>
+              </div>
+              <p class="img circle"><img alt="아이디어" src="../../img/idea.png" /></p>
+              <a href="#" class="link">지금 시작하기</a>
+            </section>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <p>© Copyright 2023 KIMSOOBIN All Rights Reserved.</p>
+      </footer>
+    </div>
+
+<script>
+'use strict';
+
+
+
+
+</script>
+  </body>
+</html>
