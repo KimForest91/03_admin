@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="../../fa/css/all.min.css" />
     <link rel="stylesheet" href="../../css/web-font.css" />
     <link rel="stylesheet" href="../../css/reset.css" />
-    <link rel="stylesheet" href="../../css/style.css" media="all and (min-width: 1024.0px)" />
-    <link rel="stylesheet" href="../../css/style_m.css" media="all and (max-width: 1023.9px)" />
+    <link rel="stylesheet" href="../../css/style.css" />
+<!--     <link rel="stylesheet" href="../../css/style.css" media="all and (min-width: 1024.0px)" />
+    <link rel="stylesheet" href="../../css/style_m.css" media="all and (max-width: 1023.9px)" /> -->
     <script src="../../js/jquery-3.6.1.min.js"></script>
     <script src="../../js/common.js"></script>
   </head>
-  <body class="sub">
+  <body class="sub layout">
     <div id="wrapper">
       <a href="#" id="skip-nav">본문 바로가기</a>
       <header id="header">
@@ -40,21 +41,21 @@
           <h2 class="ir-hidden">네비게이션</h2>
           <div class="profile">
             <p class="circle"><img alt="picture" src="../../img/profile.jpg" /><p/>
-            <h2>
+            <h3>
               <p>내 프로필</p>
               <p>KIMSOOBIN</p>
-            </h2>
+            </h3>
           </div>
           <nav>
             <ul class="aside_top">
-              <li><a href="./../overview/dashboard.html"><i class="fa-solid fa-border-all"></i>Dashboard</a></li>
-              <li><a href="../../page/sample/analytics.html"><i class="fa-solid fa-chart-simple"></i>Analytics</a></li>
-              <li><a href="../../page/sample/form.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Form</a></li>
-              <li class="on"><a href="../../page/sample/layout.html"><i class="fa-solid fa-table"></i>Layout</a></li>
-              <li><a href="../../page/sample/button.html"><i class="fa-solid fa-toggle-on"></i>Button</a></li>
-              <li><a href="#"><i class="fa-solid fa-list"></i>List Page</a></li>
-              <li><a href="#"><i class="fa-solid fa-mountain-sun"></i>View Page</a></li>
-              <li><a href="../../page/sample/editpage.html"><i class="fa-solid fa-pen-to-square"></i>Edit Page</a></li>
+              <li data-menu="dashboard"><a href="./../overview/dashboard.html"><i class="fa-solid fa-border-all"></i>Dashboard</a></li>
+              <li data-menu="analytics"><a href="#"><i class="fa-solid fa-chart-simple"></i>Analytics</a></li>
+              <li data-menu="form"><a href="../../page/sample/form.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Form</a></li>
+              <li data-menu="layout"><a href="../../page/sample/layout.html"><i class="fa-solid fa-table"></i>Layout</a></li>
+              <li data-menu="button"><a href="../../page/sample/button.html"><i class="fa-solid fa-toggle-on"></i>Button</a></li>
+              <li data-menu="listpage"><a href="#"><i class="fa-solid fa-list"></i>List Page</a></li>
+              <li data-menu="viewpage"><a href="#"><i class="fa-solid fa-mountain-sun"></i>View Page</a></li>
+              <li data-menu="editpage"><a href="../../page/sample/editpage.html"><i class="fa-solid fa-pen-to-square"></i>Edit Page</a></li>
             </ul>
             <ul class="aside_bottom">
               <li><a href="#"><i class="fa-solid fa-gear"></i>Setting</a></li>
@@ -67,95 +68,95 @@
           <p>레이아웃 샘플</p>
           <section class="container_grid">
             <h4 class="title">SECTION TITLE</h4>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 1</h5>
               <p>content...</p>
             </div>
           </section>
           <section class="container_grid col_2">
             <h4 class="title">SECTION TITLE</h4>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 1</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 2</h5>
               <p>content...</p>
             </div>
           </section>
           <section class="container_grid col_3">
             <h4 class="title">SECTION TITLE</h4>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 1</h5>
               <p>content...</p>
             </div>
-            <div class="span_2">
+            <div class="grid span_2">
               <h5 class="title">TITILE 2</h5>
               <p>content...</p>
             </div>
-            <div class="span_2">
+            <div class="grid span_2">
               <h5 class="title">TITILE 3</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 4</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 5</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 6</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 7</h5>
               <p>content...</p>
             </div>
           </section>
           <section class="container_grid col_4">
             <h4 class="title">SECTION TITLE</h4>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 1</h5>
               <p>content...</p>
             </div>
-            <div class="span_3">
+            <div class="grid span_3">
               <h5 class="title">TITILE 2</h5>
               <p>content...</p>
             </div>
-            <div class="span_2">
+            <div class="grid span_2">
               <h5 class="title">TITILE 3</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 4</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 5</h5>
               <p>content...</p>
             </div>
           </section>
           <section class="container_grid col_4 type_1">
             <h4 class="title">SECTION TITLE</h4>
-            <div class="big">
+            <div class="grid big">
               <h5 class="title">TITILE 1</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 2</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 3</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 4</h5>
               <p>content...</p>
             </div>
-            <div>
+            <div class="grid">
               <h5 class="title">TITILE 5</h5>
               <p>content...</p>
             </div>
@@ -171,7 +172,52 @@
 <script>
 'use strict';
 
+controlAside();
 
+/* navigation */
+function controlAside() {
+  setCurrent();
+  checkWidth();
+
+  $('#header div.logo > a.bar').on('click', function() {
+    // alert('hello');
+    $('#gnb').toggleClass('on');
+    $('section.content_container').toggleClass('on');
+  });
+
+  function setCurrent() {
+    let bodyClass = $('body').attr('class');
+    let classArray = bodyClass.split(' ');
+    if (bodyClass === 'login') return false;
+    
+    $('nav ul.aside_top > li').each(function() {
+      //console.log($(this).attr('data-menu'));
+      if (classArray[1] === $(this).attr('data-menu')) {
+        //console.log($(this).attr('data-menu'));
+        $(this).addClass('on');
+      } else {
+        $(this).removeClass('on');
+      }
+    });
+  }
+
+  $(window).on('resize', function() {
+    checkWidth();
+  });
+
+  function checkWidth() {
+    let windowWidth = $(window).width();
+    if (windowWidth < 1300) {
+      //alert('good');
+      $('#gnb').addClass('on');
+      $('section.content_container').addClass('on');
+    } else {
+      $('#gnb').removeClass('on');
+      $('section.content_container').removeClass('on');
+    }
+  }
+
+}
 </script>
   </body>
 </html>

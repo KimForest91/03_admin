@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="../../fa/css/all.min.css" />
     <link rel="stylesheet" href="../../css/web-font.css" />
     <link rel="stylesheet" href="../../css/reset.css" />
-    <link rel="stylesheet" href="../../css/style.css" media="all and (min-width: 1024.0px)" />
-    <link rel="stylesheet" href="../../css/style_m.css" media="all and (max-width: 1023.9px)" />
+    <link rel="stylesheet" href="../../css/style.css" />
+<!--     <link rel="stylesheet" href="../../css/style.css" media="all and (min-width: 1024.0px)" />
+    <link rel="stylesheet" href="../../css/style_m.css" media="all and (max-width: 1023.9px)" /> -->
     <script src="../../js/jquery-3.6.1.min.js"></script>
     <script src="../../js/common.js"></script>
   </head>
-  <body class="sub">
+  <body class="sub dashboard">
     <div id="wrapper">
       <a href="#" id="skip-nav">본문 바로가기</a>
       <header id="header">
@@ -40,21 +41,21 @@
           <h2 class="ir-hidden">네비게이션</h2>
           <div class="profile">
             <p class="circle"><img alt="picture" src="../../img/profile.jpg" /></>
-            <h2>
+            <h3>
               <p>내 프로필</p>
               <p>KIMSOOBIN</p>
-            </h2>
+            </h3>
           </div>
           <nav>
             <ul class="aside_top">
-              <li class="on"><a href="./dashboard.html"><i class="fa-solid fa-border-all"></i>Dashboard</a></li>
-              <li><a href="../../page/sample/analytics.html"><i class="fa-solid fa-chart-simple"></i>Analytics</a></li>
-              <li><a href="../../page/sample/form.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Form</a></li>
-              <li><a href="../../page/sample/layout.html"><i class="fa-solid fa-table"></i>Layout</a></li>
-              <li><a href="../../page/sample/button.html"><i class="fa-solid fa-toggle-on"></i>Button</a></li>
-              <li><a href="#"><i class="fa-solid fa-list"></i>List Page</a></li>
-              <li><a href="#"><i class="fa-solid fa-mountain-sun"></i>View Page</a></li>
-              <li><a href="../../page/sample/editpage.html"><i class="fa-solid fa-pen-to-square"></i>Edit Page</a></li>
+              <li data-menu="dashboard"><a href="./../overview/dashboard.html"><i class="fa-solid fa-border-all"></i>Dashboard</a></li>
+              <li data-menu="analytics"><a href="#"><i class="fa-solid fa-chart-simple"></i>Analytics</a></li>
+              <li data-menu="form"><a href="../../page/sample/form.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Form</a></li>
+              <li data-menu="layout"><a href="../../page/sample/layout.html"><i class="fa-solid fa-table"></i>Layout</a></li>
+              <li data-menu="button"><a href="../../page/sample/button.html"><i class="fa-solid fa-toggle-on"></i>Button</a></li>
+              <li data-menu="listpage"><a href="#"><i class="fa-solid fa-list"></i>List Page</a></li>
+              <li data-menu="viewpage"><a href="#"><i class="fa-solid fa-mountain-sun"></i>View Page</a></li>
+              <li data-menu="editpage"><a href="../../page/sample/editpage.html"><i class="fa-solid fa-pen-to-square"></i>Edit Page</a></li>
             </ul>
             <ul class="aside_bottom">
               <li><a href="#"><i class="fa-solid fa-gear"></i>Setting</a></li>
@@ -62,8 +63,8 @@
             </ul>
           </nav>
         </aside>
-        <section class="content_container">
-          <h3>대시보드</h3>
+        <section class="content_container container_grid col_3">
+          <h3 class="title">대시보드</h3>
           <div>
             <section class="inner">
               <h4>최근 동영상 실적</h4>
@@ -111,9 +112,9 @@
                   <div>
                     <h4>영상 제목이 들어가는 자리입니다.</h4>
                     <ul>
-                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
-                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
-                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"></i>4.3천</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"></i>30</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-thumbs-up"></i>227</a></li>
                     </ul>
                     <ul class="hover">
                       <li><a href="#"><i class="fas fa-light fa-pencil"><span>수정</span></i></a></li>
@@ -128,15 +129,15 @@
                   <div>
                     <h4>영상 제목이 들어가는 자리입니다.</h4>
                     <ul>
-                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
-                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
-                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"></i>4.3천</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"></i>30</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-thumbs-up"></i>227</a></li>
                     </ul>
                     <ul class="hover">
-                      <li><i class="fas fa-light fa-pencil"></i></li>
-                      <li><i class="fas fa-light fa-chart-column"></i></li>
-                      <li><i class="fas fa-light fa-comment-dots"></i></li>
-                      <li><i class="fa-brands fa-youtube"></i></li>
+                      <li><a href="#"><i class="fas fa-light fa-pencil"><span>수정</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"><span>분석</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"><span>댓글</span></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-youtube"><span>영상</span></i></a></li>
                     </ul>
                   </div>
                 </li>
@@ -145,15 +146,15 @@
                   <div>
                     <h4>영상 제목이 들어가는 자리입니다.</h4>
                     <ul>
-                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
-                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
-                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"></i>4.3천</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"></i>30</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-thumbs-up"></i>227</a></li>
                     </ul>
                     <ul class="hover">
-                      <li><i class="fas fa-light fa-pencil"></i></li>
-                      <li><i class="fas fa-light fa-chart-column"></i></li>
-                      <li><i class="fas fa-light fa-comment-dots"></i></li>
-                      <li><i class="fa-brands fa-youtube"></i></li>
+                      <li><a href="#"><i class="fas fa-light fa-pencil"><span>수정</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"><span>분석</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"><span>댓글</span></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-youtube"><span>영상</span></i></a></li>
                     </ul>
                   </div>
                 </li>
@@ -162,15 +163,15 @@
                   <div>
                     <h4>영상 제목이 들어가는 자리입니다.</h4>
                     <ul>
-                      <li><i class="fas fa-light fa-chart-column"></i>4.3천</li>
-                      <li><i class="fas fa-light fa-comment-dots"></i>30</li>
-                      <li><i class="fas fa-light fa-thumbs-up"></i>227</li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"></i>4.3천</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"></i>30</a></li>
+                      <li><a href="#"><i class="fas fa-light fa-thumbs-up"></i>227</a></li>
                     </ul>
                     <ul class="hover">
-                      <li><i class="fas fa-light fa-pencil"></i></li>
-                      <li><i class="fas fa-light fa-chart-column"></i></li>
-                      <li><i class="fas fa-light fa-comment-dots"></i></li>
-                      <li><i class="fa-brands fa-youtube"></i></li>
+                      <li><a href="#"><i class="fas fa-light fa-pencil"><span>수정</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-chart-column"><span>분석</span></i></a></li>
+                      <li><a href="#"><i class="fas fa-light fa-comment-dots"><span>댓글</span></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-youtube"><span>영상</span></i></a></li>
                     </ul>
                   </div>
                 </li>
@@ -296,7 +297,66 @@
 <script>
 'use strict';
 
+controlAside();
 
+
+/* 게시된 동영상 hover효과 */
+$('ul.post > li > div').on('mouseenter', function() {
+  //alert('hello');
+  $(this).parent().addClass('on');
+});
+
+$('ul.post > li > div').on('mouseleave', function() {
+  //alert('hello');
+  $('ul.post > li').removeClass('on');
+});
+
+
+
+/* navigation */
+function controlAside() {
+  setCurrent();
+  checkWidth();
+
+  $('#header div.logo > a.bar').on('click', function() {
+    // alert('hello');
+    $('#gnb').toggleClass('on');
+    $('section.content_container').toggleClass('on');
+  });
+
+  function setCurrent() {
+    let bodyClass = $('body').attr('class');
+    let classArray = bodyClass.split(' ');
+    if (bodyClass === 'login') return false;
+    
+    $('nav ul.aside_top > li').each(function() {
+      //console.log($(this).attr('data-menu'));
+      if (classArray[1] === $(this).attr('data-menu')) {
+        //console.log($(this).attr('data-menu'));
+        $(this).addClass('on');
+      } else {
+        $(this).removeClass('on');
+      }
+    });
+  }
+  
+  $(window).on('resize', function() {
+    checkWidth();
+  });
+
+  function checkWidth() {
+    let windowWidth = $(window).width();
+    if (windowWidth < 1300) {
+      //alert('good');
+      $('#gnb').addClass('on');
+      $('section.content_container').addClass('on');
+    } else {
+      $('#gnb').removeClass('on');
+      $('section.content_container').removeClass('on');
+    }
+  }
+
+}
 
 
 </script>
